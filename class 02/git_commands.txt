@@ -1,0 +1,9 @@
+git clone "repo_link"
+
+code . < to open vs code
+
+git add .
+
+git commit -m "your_msg"
+
+git push
