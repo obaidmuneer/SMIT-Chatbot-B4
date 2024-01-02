@@ -1,0 +1,18 @@
+/* .container{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.child{
+    flex-grow:2;
+} */
