@@ -1,0 +1,8 @@
+create a file named index.mjs
+npm init
+go to package.json 
+add below two line in script obj
+ "start": "node index.mjs",
+ "dev": "node --watch index.mjs"
+now do 
+npm start or npm run dev
