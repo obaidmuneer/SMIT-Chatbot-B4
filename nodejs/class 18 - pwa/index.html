@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Hello Nodejs class 2</h1>
+    <a href="./about.html">About</a>
+    <script type="module" src="./app.mjs"></script>
+</body>
+
+</html>

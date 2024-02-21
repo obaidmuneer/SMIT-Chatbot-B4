@@ -1,0 +1,19 @@
+{
+  "background_color": "#1ad25e",
+  "description": "this is nodejs app",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Nodejs, this is best pwa in the town.",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Nodejs",
+  "start_url": "/",
+  "theme_color": "#e80000",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "id": "/"
+}
