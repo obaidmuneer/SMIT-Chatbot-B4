@@ -1,0 +1,48 @@
+{
+    "responseId": "3cf1aa08-142e-42f6-9080-e56e847cf5a7-7e52c21d",
+    "queryResult": {
+        "queryText": "yes",
+        "action": "order.order-yes",
+        "parameters": {},
+        "allRequiredParamsPresent": true,
+        "fulfillmentText": "this is yes intent",
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        "this is yes intent"
+                    ]
+                }
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/pizza-boy-gvch/agent/sessions/1ffcfbde-0100-d1bd-2a79-c24099bf15b9/contexts/order-yes",
+                "lifespanCount": 1,
+                "parameters": {
+                    "qty": 1,
+                    "size": "small",
+                    "flavor": "fajita"
+                }
+            },
+            {
+                "name": "projects/pizza-boy-gvch/agent/sessions/1ffcfbde-0100-d1bd-2a79-c24099bf15b9/contexts/__system_counters__",
+                "parameters": {
+                    "no-input": 0,
+                    "no-match": 0
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/pizza-boy-gvch/agent/intents/35ea99ca-3844-43dc-83c2-85011d4946bc",
+            "displayName": "order - yes"
+        },
+        "intentDetectionConfidence": 1,
+        "languageCode": "en"
+    },
+    "originalDetectIntentRequest": {
+        "source": "DIALOGFLOW_CONSOLE",
+        "payload": {}
+    },
+    "session": "projects/pizza-boy-gvch/agent/sessions/1ffcfbde-0100-d1bd-2a79-c24099bf15b9"
+}
