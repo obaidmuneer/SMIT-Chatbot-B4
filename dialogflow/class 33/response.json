@@ -1,0 +1,123 @@
+[
+    {
+        "responseId": "23cd5ecb-8170-4bf3-a099-0ef8688da1d0-5c0737f7",
+        "queryResult": {
+            "fulfillmentMessages": [
+                {
+                    "platform": "PLATFORM_UNSPECIFIED",
+                    "text": {
+                        "text": [
+                            "Hi! How are you doing?"
+                        ]
+                    },
+                    "message": "text"
+                },
+                {
+                    "platform": "PLATFORM_UNSPECIFIED",
+                    "payload": {
+                        "fields": {
+                            "richContent": {
+                                "listValue": {
+                                    "values": [
+                                        {
+                                            "listValue": {
+                                                "values": [
+                                                    {
+                                                        "structValue": {
+                                                            "fields": {
+                                                                "type": {
+                                                                    "stringValue": "chips",
+                                                                    "kind": "stringValue"
+                                                                },
+                                                                "options": {
+                                                                    "listValue": {
+                                                                        "values": [
+                                                                            {
+                                                                                "structValue": {
+                                                                                    "fields": {
+                                                                                        "text": {
+                                                                                            "stringValue": "Order pizza",
+                                                                                            "kind": "stringValue"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "kind": "structValue"
+                                                                            },
+                                                                            {
+                                                                                "structValue": {
+                                                                                    "fields": {
+                                                                                        "text": {
+                                                                                            "stringValue": "Cancle order",
+                                                                                            "kind": "stringValue"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "kind": "structValue"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "kind": "listValue"
+                                                                }
+                                                            }
+                                                        },
+                                                        "kind": "structValue"
+                                                    }
+                                                ]
+                                            },
+                                            "kind": "listValue"
+                                        }
+                                    ]
+                                },
+                                "kind": "listValue"
+                            }
+                        }
+                    },
+                    "message": "payload"
+                }
+            ],
+            "outputContexts": [],
+            "queryText": "hello",
+            "speechRecognitionConfidence": 0,
+            "action": "input.welcome",
+            "parameters": {
+                "fields": {}
+            },
+            "allRequiredParamsPresent": true,
+            "fulfillmentText": "Hi! How are you doing?",
+            "webhookSource": "",
+            "webhookPayload": null,
+            "intent": {
+                "inputContextNames": [],
+                "events": [],
+                "trainingPhrases": [],
+                "outputContexts": [],
+                "parameters": [],
+                "messages": [],
+                "defaultResponsePlatforms": [],
+                "followupIntentInfo": [],
+                "name": "projects/pizza-boy-gvch/agent/intents/f075d4fc-5679-4ba0-8714-cfe700d3db0d",
+                "displayName": "Default Welcome Intent",
+                "priority": 0,
+                "isFallback": false,
+                "webhookState": "WEBHOOK_STATE_UNSPECIFIED",
+                "action": "",
+                "resetContexts": false,
+                "rootFollowupIntentName": "",
+                "parentFollowupIntentName": "",
+                "mlDisabled": false
+            },
+            "intentDetectionConfidence": 1,
+            "diagnosticInfo": null,
+            "languageCode": "en",
+            "sentimentAnalysisResult": null
+        },
+        "webhookStatus": null,
+        "outputAudio": {
+            "type": "Buffer",
+            "data": []
+        },
+        "outputAudioConfig": null
+    },
+    null,
+    null
+]

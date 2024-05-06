@@ -1,6 +1,7 @@
 import express from "express"
 import "dotenv/config"
 import cors from "cors"
+import dialogflow from 'dialogflow';
 
 const PORT = 8080
 
@@ -49,6 +50,56 @@ app.post("/webhook", async (req, res) => {
         }
 
         res.send(dialogflow_response)
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({
+            message: "Something went wrong"
+        })
+    }
+})
+
+app.post("/chatbot", async (req, res) => {
+    try {
+        const body = req.body
+        console.log(body);
+
+        const sessionId = "user123";
+
+        // Create a new session
+        const sessionClient = new dialogflow.SessionsClient();
+        const sessionPath = sessionClient.sessionPath("pizza-boy-gvch", sessionId);
+
+        const request = {
+            session: sessionPath,
+            queryInput: {
+                text: {
+                    // The query to send to the dialogflow agent
+                    text: body.msg,
+                    // The language used by the client (en-US)
+                    languageCode: 'en-US',
+                },
+            },
+        };
+
+
+        const responses = await sessionClient.detectIntent(request);
+        console.log('Detected intent');
+        // console.log(JSON.stringify(responses));
+        const textObj = responses[0].queryResult.fulfillmentMessages.find(obj => obj.platform === "PLATFORM_UNSPECIFIED")
+        console.log(textObj.text.text[0]);
+        const text = textObj.text.text[0]
+
+        // get data from client
+        // (data)dialogflow api
+        // recieve response from dialogflow 
+        // send response back to client
+
+        res.status(200).send({
+            message: "success",
+            data: {
+                msg: text
+            }
+        })
     } catch (error) {
         console.log(error);
         res.status(500).send({

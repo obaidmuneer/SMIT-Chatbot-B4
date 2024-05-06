@@ -1,123 +1,75 @@
-[
-    {
-        "responseId": "23cd5ecb-8170-4bf3-a099-0ef8688da1d0-5c0737f7",
-        "queryResult": {
-            "fulfillmentMessages": [
-                {
-                    "platform": "PLATFORM_UNSPECIFIED",
-                    "text": {
-                        "text": [
-                            "Hi! How are you doing?"
-                        ]
-                    },
-                    "message": "text"
-                },
-                {
-                    "platform": "PLATFORM_UNSPECIFIED",
-                    "payload": {
-                        "fields": {
-                            "richContent": {
-                                "listValue": {
-                                    "values": [
-                                        {
-                                            "listValue": {
-                                                "values": [
-                                                    {
-                                                        "structValue": {
-                                                            "fields": {
-                                                                "type": {
-                                                                    "stringValue": "chips",
-                                                                    "kind": "stringValue"
-                                                                },
-                                                                "options": {
-                                                                    "listValue": {
-                                                                        "values": [
-                                                                            {
-                                                                                "structValue": {
-                                                                                    "fields": {
-                                                                                        "text": {
-                                                                                            "stringValue": "Order pizza",
-                                                                                            "kind": "stringValue"
-                                                                                        }
-                                                                                    }
-                                                                                },
-                                                                                "kind": "structValue"
-                                                                            },
-                                                                            {
-                                                                                "structValue": {
-                                                                                    "fields": {
-                                                                                        "text": {
-                                                                                            "stringValue": "Cancle order",
-                                                                                            "kind": "stringValue"
-                                                                                        }
-                                                                                    }
-                                                                                },
-                                                                                "kind": "structValue"
-                                                                            }
-                                                                        ]
-                                                                    },
-                                                                    "kind": "listValue"
-                                                                }
-                                                            }
-                                                        },
-                                                        "kind": "structValue"
-                                                    }
-                                                ]
-                                            },
-                                            "kind": "listValue"
-                                        }
-                                    ]
-                                },
-                                "kind": "listValue"
-                            }
-                        }
-                    },
-                    "message": "payload"
+{
+    "responseId": "3a3d12e3-2dc8-4422-84fe-69acf114961f-7e52c21d",
+    "queryResult": {
+        "queryText": "karachi",
+        "parameters": {
+            "date": {
+                "date_time": "2024-04-24T15:56:03+05:00"
+            },
+            "location": {
+                "country": "",
+                "city": "Karachi",
+                "admin-area": "",
+                "business-name": "",
+                "street-address": "",
+                "zip-code": "",
+                "shortcut": "",
+                "island": "",
+                "subadmin-area": ""
+            }
+        },
+        "allRequiredParamsPresent": true,
+        "fulfillmentText": "server error unable to get weather data",
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        "server error unable to get weather data"
+                    ]
                 }
-            ],
-            "outputContexts": [],
-            "queryText": "hello",
-            "speechRecognitionConfidence": 0,
-            "action": "input.welcome",
-            "parameters": {
-                "fields": {}
-            },
-            "allRequiredParamsPresent": true,
-            "fulfillmentText": "Hi! How are you doing?",
-            "webhookSource": "",
-            "webhookPayload": null,
-            "intent": {
-                "inputContextNames": [],
-                "events": [],
-                "trainingPhrases": [],
-                "outputContexts": [],
-                "parameters": [],
-                "messages": [],
-                "defaultResponsePlatforms": [],
-                "followupIntentInfo": [],
-                "name": "projects/pizza-boy-gvch/agent/intents/f075d4fc-5679-4ba0-8714-cfe700d3db0d",
-                "displayName": "Default Welcome Intent",
-                "priority": 0,
-                "isFallback": false,
-                "webhookState": "WEBHOOK_STATE_UNSPECIFIED",
-                "action": "",
-                "resetContexts": false,
-                "rootFollowupIntentName": "",
-                "parentFollowupIntentName": "",
-                "mlDisabled": false
-            },
-            "intentDetectionConfidence": 1,
-            "diagnosticInfo": null,
-            "languageCode": "en",
-            "sentimentAnalysisResult": null
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/pizza-boy-gvch/agent/sessions/7972096f-8185-1859-e25c-31e1a8e1cbcb/contexts/__system_counters__",
+                "parameters": {
+                    "no-input": 0,
+                    "no-match": 0,
+                    "date": {
+                        "date_time": "2024-04-24T15:56:03+05:00"
+                    },
+                    "date.original": "now",
+                    "location": {
+                        "country": "",
+                        "city": "Karachi",
+                        "admin-area": "",
+                        "business-name": "",
+                        "street-address": "",
+                        "zip-code": "",
+                        "shortcut": "",
+                        "island": "",
+                        "subadmin-area": ""
+                    },
+                    "location.original": "karachi"
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/pizza-boy-gvch/agent/intents/4e3e062d-41d1-4b0e-8b54-135df2cf31e9",
+            "displayName": "weather"
         },
-        "webhookStatus": null,
-        "outputAudio": {
-            "type": "Buffer",
-            "data": []
-        },
-        "outputAudioConfig": null
+        "intentDetectionConfidence": 1,
+        "languageCode": "en",
+        "sentimentAnalysisResult": {
+            "queryTextSentiment": {
+                "score": 0.3,
+                "magnitude": 0.3
+            }
+        }
     },
-    null,
-    null
-]
+    "originalDetectIntentRequest": {
+        "source": "DIALOGFLOW_CONSOLE",
+        "payload": {}
+    },
+    "session": "projects/pizza-boy-gvch/agent/sessions/7972096f-8185-1859-e25c-31e1a8e1cbcb"
+}
