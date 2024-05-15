@@ -1,0 +1,149 @@
+@import url("https://blokkfont-losgordos.netdna-ssl.com/v2/blokkfont.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+    margin: 25px;
+    background: pink;
+    font-family: "BLOKK", "Raleway", sans-serif;
+}
+
+p,
+h2 {
+    margin: 25px;
+    color: #E9EBE8;
+}
+
+.wrapper {
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar {
+    background: #E23272;
+    width: 25vw;
+    height: 90vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    z-index: 9;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+.chat-container {
+    width: 75vw;
+    height: 91.5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    flex-shrink: 1;
+    width: 100%;
+    height: 70px;
+    background: white;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.19);
+    z-index: 9;
+}
+
+.chat-window {
+    flex-grow: 9;
+    width: 100%;
+    height: 50px;
+    background: white;
+    overflow: auto;
+}
+
+.user-info {
+    background: #E9EBE8;
+    margin: 10px 15px;
+    width: 20vw;
+    height: 69%;
+    border-top-left-radius: 25px 25px;
+    border-bottom-left-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
+    border-bottom-right-radius: 25px 25px;
+}
+
+.bottom-bar {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.19);
+}
+
+.chat-input {
+    flex-grow: 8;
+    border: 0;
+    padding-left: 20px;
+    outline: none;
+}
+
+.send-btn {
+    flex-shrink: 1;
+    border: 0;
+    border-bottom-right-radius: 10px;
+    background: white;
+}
+
+.send-btn:focus {
+    outline: none;
+}
+
+.send-btn:hover {
+    background: linen;
+}
+
+.send-btn:hover .material-icons {
+    transition: all 0.3s ease-out;
+    transform: scale(1.2) rotateZ(-90deg);
+}
+
+.material-icons {
+    color: #E23272;
+    padding: 10px;
+    transform: rotateZ(-90deg);
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+
+    .chat-container {
+        flex-grow: 1;
+    }
+
+    .chat-window {
+        position: static;
+        width: 100%;
+    }
+
+    .top-bar {
+        border-top-left-radius: 10px;
+        position: static;
+        width: 100%;
+    }
+
+    .chat-input,
+    .bottom-bar {
+        border-bottom-left-radius: 10px;
+        position: static;
+        width: 100%;
+    }
+
+    .user-info {
+        width: 40vw;
+        position: static;
+    }
+}
